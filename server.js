@@ -40,6 +40,13 @@ app.get('/', (req, res)=>{
 
 });
 
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs',{
+        title: 'Dynamic projects page',
+        content: 'this is a porfolio page'
+    })
+});
+
 app.get('/about', (req, res)=>{
  res.render('about.hbs', {
      title: 'Dynamic About page',
