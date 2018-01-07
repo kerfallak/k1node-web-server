@@ -27,9 +27,6 @@ app.use((req, res, next)=>{
     next();
 });
 
-app.use((req, res)=>{
-   res.render('sitedown.hbs');
-});
 
 hbs.registerHelper('screamIt', (text)=>{
     return text.toUpperCase();
